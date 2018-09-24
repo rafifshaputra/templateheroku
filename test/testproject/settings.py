@@ -16,7 +16,7 @@ import sys
 
 # Hack for running app directly.
 sys.path.insert(0, os.path.abspath('..'))
-# Hack for tests. 
+# Hack for tests.
 sys.path.insert(0, os.path.abspath('.'))
 
 import django_heroku
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'coba',
 ]
 
 MIDDLEWARE = [

@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import coba.urls as coba
+from django.conf.urls import url, include
+
 
 urlpatterns = [
+    url(r'^coba/', include(('coba.urls', 'coba'),namespace='coba')),
+
     path('admin/', admin.site.urls),
 ]
